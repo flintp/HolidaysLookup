@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		F339DF6D246540EB00CFA8DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339DF6C246540EB00CFA8DF /* AppDelegate.swift */; };
 		F339DF6F246540EB00CFA8DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339DF6E246540EB00CFA8DF /* SceneDelegate.swift */; };
-		F339DF71246540EB00CFA8DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339DF70246540EB00CFA8DF /* ViewController.swift */; };
 		F339DF74246540EB00CFA8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F339DF72246540EB00CFA8DF /* Main.storyboard */; };
 		F339DF76246540EE00CFA8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F339DF75246540EE00CFA8DF /* Assets.xcassets */; };
 		F339DF79246540EE00CFA8DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F339DF77246540EE00CFA8DF /* LaunchScreen.storyboard */; };
 		F339DF84246540EE00CFA8DF /* RestTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339DF83246540EE00CFA8DF /* RestTestTests.swift */; };
 		F339DF8F246540EE00CFA8DF /* RestTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339DF8E246540EE00CFA8DF /* RestTestUITests.swift */; };
+		F339DF9D246546AC00CFA8DF /* HolidaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339DF9C246546AC00CFA8DF /* HolidaysTableViewController.swift */; };
+		F339DF9F246547FF00CFA8DF /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339DF9E246547FF00CFA8DF /* Holiday.swift */; };
+		F339DFA12466CC2200CFA8DF /* HolidayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339DFA02466CC2200CFA8DF /* HolidayRequest.swift */; };
+		F339DFA32466EC9E00CFA8DF /* HolidayDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339DFA22466EC9E00CFA8DF /* HolidayDetailsViewController.swift */; };
+		F339DFA524672C3000CFA8DF /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339DFA424672C3000CFA8DF /* ExamplesViewController.swift */; };
+		F3857963246C520B00C9FEA3 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3857962246C520B00C9FEA3 /* LoadingViewController.swift */; };
+		F3857965246C610200C9FEA3 /* Thread+printCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3857964246C610200C9FEA3 /* Thread+printCurrent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,6 @@
 		F339DF69246540EB00CFA8DF /* RestTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F339DF6C246540EB00CFA8DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F339DF6E246540EB00CFA8DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F339DF70246540EB00CFA8DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F339DF73246540EB00CFA8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F339DF75246540EE00CFA8DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F339DF78246540EE00CFA8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		F339DF8A246540EE00CFA8DF /* RestTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F339DF8E246540EE00CFA8DF /* RestTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTestUITests.swift; sourceTree = "<group>"; };
 		F339DF90246540EE00CFA8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F339DF9C246546AC00CFA8DF /* HolidaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysTableViewController.swift; sourceTree = "<group>"; };
+		F339DF9E246547FF00CFA8DF /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
+		F339DFA02466CC2200CFA8DF /* HolidayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayRequest.swift; sourceTree = "<group>"; };
+		F339DFA22466EC9E00CFA8DF /* HolidayDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayDetailsViewController.swift; sourceTree = "<group>"; };
+		F339DFA424672C3000CFA8DF /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
+		F3857962246C520B00C9FEA3 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		F3857964246C610200C9FEA3 /* Thread+printCurrent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thread+printCurrent.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +113,8 @@
 			children = (
 				F339DF6C246540EB00CFA8DF /* AppDelegate.swift */,
 				F339DF6E246540EB00CFA8DF /* SceneDelegate.swift */,
-				F339DF70246540EB00CFA8DF /* ViewController.swift */,
+				F385796A246D480B00C9FEA3 /* Features */,
+				F3857969246D476B00C9FEA3 /* Extensions */,
 				F339DF72246540EB00CFA8DF /* Main.storyboard */,
 				F339DF75246540EE00CFA8DF /* Assets.xcassets */,
 				F339DF77246540EE00CFA8DF /* LaunchScreen.storyboard */,
@@ -126,6 +139,75 @@
 				F339DF90246540EE00CFA8DF /* Info.plist */,
 			);
 			path = RestTestUITests;
+			sourceTree = "<group>";
+		};
+		F3857967246D45DD00C9FEA3 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F385796B246D484000C9FEA3 /* Models */,
+				F385796D246D488B00C9FEA3 /* Views */,
+				F3857968246D460000C9FEA3 /* View Controllers */,
+				F385796C246D484A00C9FEA3 /* Networking */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F3857968246D460000C9FEA3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F339DF9C246546AC00CFA8DF /* HolidaysTableViewController.swift */,
+				F339DFA22466EC9E00CFA8DF /* HolidayDetailsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F3857969246D476B00C9FEA3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3857964246C610200C9FEA3 /* Thread+printCurrent.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F385796A246D480B00C9FEA3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F3857967246D45DD00C9FEA3 /* Dashboard */,
+				F385796E246D48A900C9FEA3 /* Examples Screen */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F385796B246D484000C9FEA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F339DF9E246547FF00CFA8DF /* Holiday.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F385796C246D484A00C9FEA3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F339DFA02466CC2200CFA8DF /* HolidayRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F385796D246D488B00C9FEA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3857962246C520B00C9FEA3 /* LoadingViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F385796E246D48A900C9FEA3 /* Examples Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F339DFA424672C3000CFA8DF /* ExamplesViewController.swift */,
+			);
+			path = "Examples Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +341,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F339DF71246540EB00CFA8DF /* ViewController.swift in Sources */,
+				F339DFA12466CC2200CFA8DF /* HolidayRequest.swift in Sources */,
+				F339DF9D246546AC00CFA8DF /* HolidaysTableViewController.swift in Sources */,
+				F339DF9F246547FF00CFA8DF /* Holiday.swift in Sources */,
+				F339DFA32466EC9E00CFA8DF /* HolidayDetailsViewController.swift in Sources */,
+				F3857965246C610200C9FEA3 /* Thread+printCurrent.swift in Sources */,
+				F3857963246C520B00C9FEA3 /* LoadingViewController.swift in Sources */,
+				F339DFA524672C3000CFA8DF /* ExamplesViewController.swift in Sources */,
 				F339DF6D246540EB00CFA8DF /* AppDelegate.swift in Sources */,
 				F339DF6F246540EB00CFA8DF /* SceneDelegate.swift in Sources */,
 			);
@@ -435,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6P353L5CUQ;
 				INFOPLIST_FILE = RestTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6P353L5CUQ;
 				INFOPLIST_FILE = RestTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
