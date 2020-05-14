@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1KD-oD-jdd">
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Holidays-->
+        <scene sceneID="Y5p-Sa-M3Q">
+            <objects>
+                <tableViewController id="PIa-vR-vMs" customClass="HolidaysTableViewController" customModule="RestTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eWT-zy-XpD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Enter Country Code e.g. US" id="1xU-yJ-reE">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="vMB-gN-yfu" detailTextLabel="fmn-L8-RtE" style="IBUITableViewCellStyleSubtitle" id="0EN-Uo-ABu">
+                                <rect key="frame" x="0.0" y="72" width="320" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0EN-Uo-ABu" id="z8P-WF-1LK">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vMB-gN-yfu">
+                                            <rect key="frame" x="16" y="10" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fmn-L8-RtE">
+                                            <rect key="frame" x="16" y="31.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PIa-vR-vMs" id="hsH-5p-P0r"/>
+                            <outlet property="delegate" destination="PIa-vR-vMs" id="WEG-Qs-DPf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Holidays" id="kz9-H8-4gs">
+                        <barButtonItem key="rightBarButtonItem" title="Examples" id="LyB-gh-96M">
+                            <connections>
+                                <action selector="examplesButtonPressed:" destination="PIa-vR-vMs" id="tjh-Az-W2Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="1xU-yJ-reE" id="eVg-4X-Bsj"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9R-u2-7OV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856.25" y="130.98591549295776"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LtJ-LJ-DBW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1KD-oD-jdd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vc4-h1-3Ww">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PIa-vR-vMs" kind="relationship" relationship="rootViewController" id="ltl-fs-JPX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRe-BV-jeJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858.75" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+</document>

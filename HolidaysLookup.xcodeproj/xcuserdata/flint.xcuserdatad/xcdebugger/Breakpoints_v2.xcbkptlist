@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1E624C49-42F0-4D90-B24C-983B3AF1FB61"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6EA9B2E5-AC72-449A-8F5A-9EA43CB0B808"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RestTest/HolidayRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getHolidays(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6EA9B2E5-AC72-449A-8F5A-9EA43CB0B808 - 4d9306df17122e68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RestTest.HolidayRequest.getHolidays(completion: (Swift.Result&lt;Swift.Array&lt;RestTest.HolidayDetail&gt;, RestTest.HolidayError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "RestTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/flint/Programming/Repos/RestTest/RestTest/HolidayRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "6EA9B2E5-AC72-449A-8F5A-9EA43CB0B808 - e8b5012eb5fc8af8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in RestTest.HolidayRequest.getHolidays(completion: (Swift.Result&lt;Swift.Array&lt;RestTest.HolidayDetail&gt;, RestTest.HolidayError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "RestTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/flint/Programming/Repos/RestTest/RestTest/HolidayRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "FC7617D8-507D-4556-BA79-40E9BF304D81"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po $arg1">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
