@@ -10,11 +10,13 @@ import UIKit
 
 class LoadingViewController: UIViewController {
     
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
+    //MARK: - Private
     private func setupUI() {
         view.backgroundColor = UIColor.systemBackground.withAlphaComponent(0.85)
         
@@ -31,7 +33,9 @@ class LoadingViewController: UIViewController {
                                relatedBy: .equal,
                                toItem: view,
                                attribute: .centerY,
-                multiplier: 0.5, constant: 0)
+                               multiplier: 0.5,
+                               constant: 0
+            )
         ])
     }
 }

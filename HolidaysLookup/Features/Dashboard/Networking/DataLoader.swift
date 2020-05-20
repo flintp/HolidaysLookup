@@ -9,19 +9,29 @@
 
 import Foundation
 
+enum DataLoadError: Error {
+    case invalidURL
+    case dataReturnedIsEmpty
+    case canNotProcessData
+}
+
 class DataLoader {
-    func loadData (forRequest request: HolidayRequest, completion: @escaping(Result<[HolidayDetail], RequestError>) -> Void ) {
-        let dataTask = URLSession.shared.dataTask(with: request.resourceURL) { data, response, error in
-            print(data)
-            print(response)
-            print(error)
+    //MARK: - Private
+    private func handleClientError(_ error: Error) {
+        print("Error encountered during network request: \(error.localizedDescription)")
+    }
+    
+    //MARK: - Public
+    func request(_ endpoint: Endpoint, completion: @escaping(Result<[HolidayDetail], DataLoadError>) -> Void ) {
+        
+        let dataTask = URLSession.shared.dataTask(with: endpoint.url) { data, response, error in
             
             if let error = error {
                 self.handleClientError(error)
             }
             
             guard let jsonData = data else {
-                completion(.failure(.noDataAvailable))
+                completion(.failure(.dataReturnedIsEmpty))
                 return
             }
             
@@ -37,9 +47,4 @@ class DataLoader {
         }
         dataTask.resume()
     }
-    
-    private func handleClientError(_ error: Error) {
-        print("Error encountered during network request: \(error.localizedDescription)")
-    }
-    
 }

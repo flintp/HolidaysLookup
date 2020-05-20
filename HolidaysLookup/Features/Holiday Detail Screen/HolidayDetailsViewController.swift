@@ -9,8 +9,8 @@
 import UIKit
 
 class HolidayDetailsViewController: UIViewController {
-    var holidaysData: HolidayDetail?
-    
+    var model: HolidayDetailsModelController!
+        
     let holidayNameLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -53,6 +53,18 @@ class HolidayDetailsViewController: UIViewController {
         return label
     }()
     
+    //MARK: - Initalization
+    
+    init(model: Holiday) {
+        self.model = HolidayDetailsModelController(model: model)
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupConstraints()
@@ -60,7 +72,7 @@ class HolidayDetailsViewController: UIViewController {
     }
     
     private func setupConstraints() {
-        
+        //TODO: Maybe refactor this into a stackview?
         let containerView = UIView(frame: .zero)
         containerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(containerView)
@@ -102,13 +114,17 @@ class HolidayDetailsViewController: UIViewController {
     }
     
     private func setupUI() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.backgroundColor = .clear
+        navigationController?.navigationBar.isTranslucent = true
+        
         navigationItem.largeTitleDisplayMode = .never
         view.backgroundColor = .systemBackground
         
-        holidayNameLabel.text = holidaysData?.name
-        holidayDateLabel.text = holidaysData?.date.iso
-        holidayDescriptionLabel.text = holidaysData?.description
-        holidayTypeLabel.text = holidaysData?.type.first
-        title = "P"
+        holidayNameLabel.text = model.getName
+        holidayDateLabel.text = model.getDate
+        holidayDescriptionLabel.text = model.getDescription
+        holidayTypeLabel.text = model.getType
     }
 }
