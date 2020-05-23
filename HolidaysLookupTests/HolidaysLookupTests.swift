@@ -1,15 +1,15 @@
 //
-//  RestTestTests.swift
-//  RestTestTests
+//  HolidaysLookupTests.swift
+//  HolidaysLookupTests
 //
 //  Created by Julian Flint Pearce on 08/05/2020.
 //  Copyright © 2020 Julian Flint Pearce. All rights reserved.
 //
 
 import XCTest
-@testable import RestTest
+@testable import HolidaysLookup
 
-class RestTestTests: XCTestCase {
+class HolidaysLookupTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

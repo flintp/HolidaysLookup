@@ -17,6 +17,7 @@ enum ViewState<Model> {
 }
 
 class HolidaysTableViewController: UITableViewController {
+    
     //MARK: – Controllers
     private let logic = HolidaysLogicController()
     private let modelController = HolidaysModelController(model: HolidaysModel())
@@ -73,6 +74,7 @@ class HolidaysTableViewController: UITableViewController {
     //MARK: - Private
     private func setupUI() {
         navigationController?.navigationItem.largeTitleDisplayMode = .automatic
+        tableView.register(HolidaysSectionHeaderView.self, forHeaderFooterViewReuseIdentifier: "sectionHeader")
 
         searchBar.delegate = self
         tableView.keyboardDismissMode = .interactive
@@ -109,8 +111,16 @@ extension HolidaysTableViewController {
         return modelController.numberOfDaysForMonth(section)
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return Calendar.current.monthSymbols[section]
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "sectionHeader") as? HolidaysSectionHeaderView
+        headerView?.setText(Calendar.current.monthSymbols[section])
+        headerView?.setTextColor(UIColor.HolidayTheme.colorsInOrder[section]) 
+        
+        return headerView
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -125,6 +135,7 @@ extension HolidaysTableViewController {
 
 // MARK: - UITableViewDelegate
 extension HolidaysTableViewController {
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextViewController = HolidayDetailsViewController(model: modelController.getIndividualHoliday(for: indexPath))
         navigationController?.pushViewController(nextViewController, animated: true)
